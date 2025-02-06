@@ -1,10 +1,37 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 	<head>
-		<title>Kayo Almeida Medvedchikoff</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Calc</title>
+		<script src="./script/script.js"></script>
+		<link href="./css/style.css" rel="stylesheet" type="text/css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<marquee>
-			<h1>Olá Mundo!</h1>
-		</marquee>
+		<div class="form">
+			<div class="topo">
+				<h1>ETANOL OU<br>GASOLINA?</h1>
+				<h2>Descubra o combustível com melhor custo x benefício</h2>
+			</div>
+
+			<div class="painel">
+				<div class="card amarelo">
+					<h3>ETANOL</h3>
+					<input type="text" name="Dinheiro" value="R$">
+				</div>
+				<div class="card azul">
+					<h3>GASOLINA</h3>
+					<input type="text" name="Dinheiro" value="R$">
+				</div>
+			</div>
+
+			<div class="painel_botao">
+				<button id="bt" class="botao">Calcular</button>
+			</div>
+		</div>
 	</body>
 </html>
