@@ -1,6 +1,6 @@
 # 🕒 Sistema de Controle de Ponto de Funcionários
 
-> Projeto acadêmico desenvolvido como parte do curso técnico em Desenvolvimento de Sistemas na ETEC de São Paulo.  
+> Projeto acadêmico desenvolvido como parte do curso técnico em Desenvolvimento de Sistemas na ETEC Doutora Ruth Cardoso(São Vicente).  
 > O objetivo é aplicar conceitos de programação web, banco de dados e lógica de negócios em PHP.
 
 ---
