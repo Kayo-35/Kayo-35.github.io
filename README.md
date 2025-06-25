@@ -47,20 +47,18 @@ Este sistema permite o registro de **entrada e saída de funcionários**, possib
 
 > As imagens abaixo estão na pasta `screenshots/`.
 
-### Tela de Login
-![Home Page](screenshots/Home.png)
+### Tela de Boas Vindas
+![Home Page](screenshots/HomePage.png)
 
-### Registro de Ponto
-![Registro de Ponto](screenshots/registro.png)
+### Visualização de Pontos
+![Visualização de Pontos](screenshots/estatisticas.png)
 
 ### Painel do Administrador
-![Painel Admin](screenshots/admin-dashboard.png)
+![Painel Admin](screenshots/funcGerente.png)
 
 ---
 
 ## ⚙️ Como Executar Localmente
 
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+1. Clone o repositório no seu ambiente de desenvolvimento Web(Xampp,ou outro qualquer)
+2. Utilize o script sql para criação da base de dados(Utilize MySQL ou MariaDB)
