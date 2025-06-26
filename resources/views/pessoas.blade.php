@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br"
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,9 +17,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbar">
                 <div class="navbar-nav">
-                    <a class="nav-link text-light" aria-current="page" href="<?= route(
-                        "home"
-                    ) ?>">Home</a>
+                    <a class="nav-link text-light" href="{{ route('home') }}">Home</a>
                     <a class="nav-link active text-light" href="#">Ex1</a>
                     <a class="nav-link text-light" href="#">Ex2</a>
                 </div>
@@ -92,15 +90,21 @@
         </div>
     </div>
 
-    <!-- Script para abrir o modal automaticamente se houver erros -->
     @if($errors->any())
-        <script src="{{ asset('js/modalErro.js') }}"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                new bootstrap.Modal('#modalErro').show();
+            });
+        </script>
     @endif
 
     @isset($dados)
-        <script src="{{ asset('js/modalAcerto.js') }}"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                new bootstrap.Modal('#modalSucesso').show();
+            });
+        </script>
     @endisset
-
     @vite(['resources/js/app.js'])
   </body>
 </html>
