@@ -39,6 +39,6 @@ class PessoaController extends Controller
     public function listar()
     {
         $pessoas = Pessoa::all();
-        return view("pessoas", ["saida", $pessoas]);
+        return view("listaPessoa", ["saida" => $pessoas]);
     }
 }

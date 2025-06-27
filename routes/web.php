@@ -13,6 +13,6 @@ Route::post("/pessoa/cadastro", [PessoaController::class, "processar"])->name(
     "pessoa.cadastro"
 );
 
-Route::post("/pessoa/lista", [PessoaController::class, "listar"])->name(
+Route::get("/pessoa/lista", [PessoaController::class, "listar"])->name(
     "pessoa.listar"
 );

@@ -1,5 +1,7 @@
 @extends('base')
 @section('conteudo')
+<div class="container my-3">
+    <h3>Pessoas Cadastradas</h3>
     <table class="table">
         <theader class="table-primary">
             <th>Nome</th>
@@ -7,9 +9,12 @@
         </theader>
         <tbody>
             @foreach($saida as $p)
-                <td>$p->nm_pessoa</td>
-                <td>$p->nm_email</td>
+            <tr>
+                <td>{{ $p->nm_pessoa }}</td>
+                <td>{{ $p->nm_email }}</td>
+            </tr>
             @endforeach
         </tbody>
     </table>
+</div>
 @stop
