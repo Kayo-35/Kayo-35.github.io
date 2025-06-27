@@ -33,12 +33,18 @@ class PessoaController extends Controller
             ]
         );
 
+        Pessoa::create([
+            "nm_pessoa" => $validar["nm_nome"],
+            "dt_nascimento" => $validar["dt_nascimento"],
+            "nm_email" => $validar["nm_email"],
+        ]);
+
         return view("pessoas", ["dados" => $validar]);
     }
 
     public function listar()
     {
-        $pessoas = Pessoa::all();
+        $pessoas = Pessoa::orderBy("nm_pessoa", "desc")->get();
         return view("listaPessoa", ["saida" => $pessoas]);
     }
 }
