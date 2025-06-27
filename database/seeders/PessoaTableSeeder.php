@@ -13,10 +13,12 @@ class PessoaTableSeeder extends Seeder
             [
                 "nm_pessoa" => "Geovana Silva",
                 "nm_email" => "geovana@gmail.com",
+                "dt_nascimento" => "2003/05/15",
             ],
             [
                 "nm_pessoa" => "Kayo Almeida Medvedchikoff",
                 "nm_email" => "kayoalmeida35@gmail.com",
+                "dt_nascimento" => "2003/05/15",
             ],
         ]);
     }
