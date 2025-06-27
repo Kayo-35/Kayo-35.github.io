@@ -48,6 +48,7 @@
                     <button type='submit' class='btn btn-primary'>Enviar</button>
                 </div>
             </form>
+            <a class="btn btn-primary" href="{{ route(pessoa.listar) }}">Listar Pessoas!</a>
         </div>
     </section>
 

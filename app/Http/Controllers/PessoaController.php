@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Pessoa;
 
 class PessoaController extends Controller
 {
@@ -33,5 +34,11 @@ class PessoaController extends Controller
         );
 
         return view("pessoas", ["dados" => $validar]);
+    }
+
+    public function listar()
+    {
+        $pessoas = Pessoa::all();
+        return view("pessoas", ["saida", $pessoas]);
     }
 }
